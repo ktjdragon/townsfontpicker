@@ -188,6 +188,9 @@ try:
           else:
             #そうでない場合(前ブロックが前々ブロックよりも1大きい場合)
             start_msg += " - " + str(available_blocks[i-1]) + ", " + str(available_blocks[i])
+        elif i==len(available_blocks)-1:
+          #前ブロックよりも1大きく、且つ最後のブロックである場合
+          start_msg += " - " + str(available_blocks[i])
       start_msg += " are available.\n"
     else:
       #上記のいずれにも該当しない場合は半角フォントとみなす
