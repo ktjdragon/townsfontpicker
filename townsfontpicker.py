@@ -49,7 +49,7 @@ def bin2txt(dat):
   return linetxt
 
 #圧縮フォントデータの解凍
-#帰り値は解凍後のbytes x lines個の8ビット整数のリスト
+#帰り値は解凍後のbytes x lines個の8ビットバイトデータのリスト
 def decompressFontData(fontDataCompressed, bytes, lines):
   ret = []
   
